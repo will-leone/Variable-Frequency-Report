@@ -15,10 +15,7 @@ For a given list of variables:
 
 */
 
-/* enable multithreading for
-   faster processing */
-OPTIONS THREADS;
-    
+OPTIONS THREADS SASTRACE = ',,,sa' SASTRACELOC = SASLOG NOSTSUFFIX;   
 
 /* turn off display of outputs/notes */
 %MACRO ods_off;
